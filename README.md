@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31348455/README.md)
 # SentinelSmolLM2-360M-V8
 
 A small cybersecurity-focused language model based on **SmolLM2-360M-Instruct**.
@@ -14,6 +13,31 @@ This repository contains the trained/fine-tuned Sentinel model:
 - `tokenizer_config.json` — tokenizer configuration
 - `chat_template.jinja` — chat template
 - `training_args.bin` — training arguments
+
+## Download Model
+
+The trained model files are hosted on Google Drive because the model weights are too large for a normal GitHub upload.
+
+**Download SentinelSmolLM2-360M-V8:**
+
+https://drive.google.com/drive/folders/1vD6SDfLKJXjLqZCCHZrYCfINjdiLBg0J?usp=drive_link
+
+After downloading, place the complete `SentinelSmolLM2-360M-V8` folder next to your inference script.
+
+Example:
+
+```text
+project/
+├── run.py
+└── SentinelSmolLM2-360M-V8/
+    ├── chat_template.jinja
+    ├── config.json
+    ├── generation_config.json
+    ├── model.safetensors
+    ├── tokenizer.json
+    ├── tokenizer_config.json
+    └── training_args.bin
+```
 
 ## Requirements
 
